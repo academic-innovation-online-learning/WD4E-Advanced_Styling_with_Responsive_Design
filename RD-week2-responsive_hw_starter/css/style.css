@@ -1,144 +1,38 @@
-
-body {
-    background-color: #dedede;
+/* --- Mobile View (Base Styles) --- */
+/* This makes the divs stack vertically by default */
+div {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-h1 {
-    text-align: center;
-    font-family:Arial, sans-serif;
-    font-size: 32px;
+img {
+    width: 100%;
+    height: auto;
 }
 
-a {
-    color: #000;
-    text-decoration: none;
-    font-family:Arial, sans-serif;
+/* --- Query #1: Tablet View --- */
+@media screen and (min-width: 772px) {
+    /* Container setup to allow horizontal layout */
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    div {
+        width: 45vw; /* 45% of viewport width */
+    }
+
+    img {
+        max-height: 30vh; /* No more than 30% of viewport height */
+        width: auto;
+        object-fit: cover;
+    }
 }
 
-p {
-   font-size: 25px;
-   font-family:Arial, sans-serif;
+/* --- Query #2: Large Screen View --- */
+@media screen and (min-width: 998px) {
+    div {
+        width: 30vw; /* 30% of viewport width */
+    }
 }
-
-img{
-  width:100%;
-}
-
-
-p{
-  text-align:center;
-}
-
-div img{
-    width:150px;
-    height: 150px;
-    display:block;
-    margin:auto;
-}
-
-div{
-  display: inline-block;
-  width: 24%;
-  margin: 5px;
-  padding: 2px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-main {
-    border: 5px #000 solid;
-    margin: 10px;
-}
- */
-/* 
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
- */
-/* img{
-    width: 200px;
-    height: 200px;
-    padding: 5px;
-} */
-
-/* .child {
-    position: relative;
-    display: inline-block;
-    border: 5px black solid;
-    margin: 5px;
-    border-radius: 5px;
-} */
-
-/* 
-
-.label {
-    display: none;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-} */
-/* 
-.button {
-    display: inline-block;
-    border: 2px solid #000;
-    padding: 5px;
-    border-radius: 25px;
-}
- */
-/* 
-.button:hover {
-    background-color:#fff;
-} */
-
-/* 
-footer {
-    display: flex;
-    justify-content: center;
-} */
-
-/* 
-header {
-    border-radius: 5px;
-    border: 5px #000 solid;
-    margin: 10px;
-} */
-
-/* 
-.label {
-    display: none;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-} */
-/* 
-.child:hover .label {
-    display: block;
-} */
