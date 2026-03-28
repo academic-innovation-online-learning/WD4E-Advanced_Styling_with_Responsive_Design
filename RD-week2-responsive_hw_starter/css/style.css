@@ -43,7 +43,32 @@ div{
   padding: 2px;
 }
 
-
+/* ================================
+   MEDIA QUERY #1 — Vista Tableta
+   Se activa en pantallas de 772px o más
+================================ */
+@media screen and (min-width: 772px) {
+    div {
+        display: inline-block;
+        width: 45%;
+    }
+ 
+    div img {
+        width: auto;
+        max-height: 30vh;
+        height: 30vh;
+    }
+}
+ 
+/* ================================
+   MEDIA QUERY #2 — Vista Pantalla Grande
+   Se activa en pantallas de 998px o más
+================================ */
+@media screen and (min-width: 998px) {
+    div {
+        width: 30%;
+    }
+}
 
 
 
