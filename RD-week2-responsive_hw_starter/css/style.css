@@ -42,7 +42,27 @@ div{
   margin: 5px;
   padding: 2px;
 }
+/* Tablet */
+@media screen and (min-width: 772px) {
 
+    div{
+        width: 45%;
+        vertical-align: top;
+    }
+
+    div img{
+        max-height: 30vh;
+        width: auto;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 998px) {
+
+    div{
+        width: 30%;
+    }
+}
 
 
 
