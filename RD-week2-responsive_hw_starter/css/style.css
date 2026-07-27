@@ -42,7 +42,24 @@ div{
   margin: 5px;
   padding: 2px;
 }
+/* Consulta #1: Tablet View - se activa a los 772px */
+@media (min-width: 772px) {
+  div {
+    width: 45%;
+  }
 
+  div img {
+    height: 30vh;
+    width: auto;
+  }
+}
+
+/* Consulta #2: Vista de pantalla grande - se activa a los 998px */
+@media (min-width: 998px) {
+  div {
+    width: 30%;
+  }
+}
 
 
 
