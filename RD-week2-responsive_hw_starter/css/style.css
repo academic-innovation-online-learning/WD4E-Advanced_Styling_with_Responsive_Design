@@ -142,3 +142,30 @@ header {
 .child:hover .label {
     display: block;
 } */
+/* ===================================================
+   TRUY VẤN PHƯƠNG TIỆN #1: Tablet View (từ 772px trở lên)
+   =================================================== */
+@media screen and (min-width: 772px) {
+  /* Thay đổi chiều rộng các div thành 45% chiều rộng viewport (vw) */
+  div {
+    width: 45vw;
+    display: inline-block; /* Hoặc float: left / flex tùy theo mã khởi động ban đầu */
+    vertical-align: top;
+  }
+
+  /* Chiều cao hình ảnh không quá 30% chiều cao viewport (vh) */
+  img {
+    max-height: 30vh;
+    width: auto; /* Giữ tỷ lệ hình ảnh */
+  }
+}
+
+/* ===================================================
+   TRUY VẤN PHƯƠNG TIỆN #2: Large Screen View (từ 998px trở lên)
+   =================================================== */
+@media screen and (min-width: 998px) {
+  /* Thay đổi chiều rộng các div thành 30% chiều rộng viewport (vw) */
+  div {
+    width: 30vw;
+  }
+}
