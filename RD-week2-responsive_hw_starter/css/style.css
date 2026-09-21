@@ -42,7 +42,24 @@ div{
   margin: 5px;
   padding: 2px;
 }
+/* Truy vấn 1: Chế độ máy tính bảng (kích hoạt từ 772px) */
+@media screen and (min-width: 772px) {
+  div {
+    width: 45vw;
+    display: inline-block;
+  }
 
+  img {
+    max-height: 30vh;
+  }
+}
+
+/* Truy vấn 2: Chế độ màn hình lớn (kích hoạt từ 998px) */
+@media screen and (min-width: 998px) {
+  div {
+    width: 30vw;
+  }
+}
 
 
 
