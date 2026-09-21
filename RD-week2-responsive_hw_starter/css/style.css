@@ -42,7 +42,35 @@ div{
   margin: 5px;
   padding: 2px;
 }
+div{
+    display: inline-block;
+    width: 24%;
+    margin: 5px;
+    padding: 2px;
+}
+```
 
+#### **Bước 2: Dán đoạn mã sau vào dòng 45**
+Nhấp chuột xuống dòng 45[cite: 6] và chèn đúng đoạn mã này:
+
+```css
+/* Truy vấn phương tiện #1: Máy tính bảng (từ 772px) */
+@media screen and (min-width: 772px) {
+  div {
+    width: 45vw; /* b. Chiều rộng div bằng 45% viewport width */
+  }
+
+  img {
+    max-height: 30vh; /* a. Chiều cao hình ảnh không quá 30% viewport height */
+  }
+}
+
+/* Truy vấn phương tiện #2: Màn hình lớn (từ 998px) */
+@media screen and (min-width: 998px) {
+  div {
+    width: 30vw; /* a. Chiều rộng div bằng 30% viewport width */
+  }
+}
 
 
 
