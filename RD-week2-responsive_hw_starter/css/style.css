@@ -142,3 +142,27 @@ header {
 .child:hover .label {
     display: block;
 } */
+/* ==========================================
+   TRUY VẤN #1: Chế độ xem Máy tính bảng (Tablet View)
+   Kích hoạt từ 772px trở lên
+   ========================================== */
+@media screen and (min-width: 772px) {
+  div {
+    width: 45vw;         /* Hoặc 45% tùy theo yêu cầu của đề bài */
+    display: inline-block; /* Giúp các div nằm ngang cạnh nhau (2 div / hàng) */
+  }
+
+  img {
+    max-height: 30vh;    /* Giới hạn chiều cao hình ảnh không vượt quá 30% chiều cao khung xem */
+  }
+}
+
+/* ==========================================
+   TRUY VẤN #2: Chế độ xem Màn hình lớn (Large Screen View)
+   Kích hoạt từ 998px trở lên
+   ========================================== */
+@media screen and (min-width: 998px) {
+  div {
+    width: 30vw;         /* Hoặc 30% để xếp vừa 3 div trên cùng một hàng ngang */
+  }
+}
