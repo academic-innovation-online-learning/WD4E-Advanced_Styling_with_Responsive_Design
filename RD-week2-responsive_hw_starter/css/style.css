@@ -43,6 +43,28 @@ div{
   padding: 2px;
 }
 
+div {
+  width: 100%;
+}
+
+img {
+  max-height: 30vh;
+}
+
+@media all and (min-width: 772px) {
+  div {
+    width: 45vw;
+  }
+}
+
+@media all and (min-width: 998px) {
+  div {
+    width: 30vw;
+  }
+}
+
+
+
 
 
 
