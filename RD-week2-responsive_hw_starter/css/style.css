@@ -46,7 +46,27 @@ div{
 
 
 
+/* Truy vấn #1: Chế độ xem máy tính bảng (từ 772px trở lên) */
+@media (min-width: 772px) {
+    div {
+        width: 45%;
+    }
 
+    div img {
+        width: auto;          /* bỏ chiều rộng cố định 150px */
+        height: auto;         /* bỏ chiều cao cố định 150px */
+        max-width: 100%;      /* ảnh không tràn khỏi div */
+        max-height: 30vh;     /* ảnh không quá 30% chiều cao chế độ xem */
+        object-fit: contain;  /* giữ đúng tỉ lệ ảnh */
+    }
+}
+
+/* Truy vấn #2: Chế độ xem màn hình lớn (từ 998px trở lên) */
+@media (min-width: 998px) {
+    div {
+        width: 30%;
+    }
+}
 
 
 
